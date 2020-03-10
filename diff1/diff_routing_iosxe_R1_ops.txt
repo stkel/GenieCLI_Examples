@@ -1,0 +1,38 @@
+--- tests/normal/routing_iosxe_R1_ops.txt
++++ tests/3/routing_iosxe_R1_ops.txt
+info:
+ vrf:
+  default:
+   address_family:
+    ipv4:
+     routes:
++      192.168.122.10/32: 
++       active: True
++       next_hop: 
++        outgoing_interface: 
++         GigabitEthernet0/0: 
++          outgoing_interface: GigabitEthernet0/0
++       route: 192.168.122.10/32
++       source_protocol: local
++       source_protocol_codes: L
+-      0.0.0.0/0: 
+-       active: True
+-       metric: 0
+-       next_hop: 
+-        next_hop_list: 
+-         1: 
+-          index: 1
+-          next_hop: 192.168.122.1
+-       route: 0.0.0.0/0
+-       route_preference: 254
+-       source_protocol: static
+-       source_protocol_codes: S*
+-      192.168.122.196/32: 
+-       active: True
+-       next_hop: 
+-        outgoing_interface: 
+-         GigabitEthernet0/0: 
+-          outgoing_interface: GigabitEthernet0/0
+-       route: 192.168.122.196/32
+-       source_protocol: local
+-       source_protocol_codes: L

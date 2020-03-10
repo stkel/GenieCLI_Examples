@@ -1,0 +1,4 @@
+--- tests/normal/config_iosxe_S3_ops.txt
++++ tests/3/config_iosxe_S3_ops.txt
++Current configuration : 3715 bytes: 
+-Current configuration : 3723 bytes: 

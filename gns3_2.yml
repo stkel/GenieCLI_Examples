@@ -1,0 +1,26 @@
+testbed:
+  name: gns3_2
+
+devices:
+  
+  R1:
+    alias: R1
+    os: iosxe
+    type: IOSv
+    connections:
+      defaults:
+        class: unicon.Unicon
+        via: cli
+      cli:
+        protocol: ssh
+        ip: 192.168.122.196
+        port: 22
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+    #enable: cisco
+
+    custom:
+      abstraction:
+        order: [os, type]

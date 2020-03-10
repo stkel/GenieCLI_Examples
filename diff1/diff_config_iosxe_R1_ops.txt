@@ -1,0 +1,18 @@
+--- tests/normal/config_iosxe_R1_ops.txt
++++ tests/3/config_iosxe_R1_ops.txt
++Current configuration : 3383 bytes: 
++no cdp run: 
++no process cpu autoprofile hog: 
+-Current configuration : 3312 bytes: 
+-router ospf 1: 
+- network 0.0.0.0 255.255.255.255 area 0: 
+interface GigabitEthernet0/0:
++ ip address 192.168.122.10 255.255.255.0: 
+- ip address dhcp: 
++ no cdp enable: 
+interface GigabitEthernet0/1:
++ no cdp enable: 
+interface GigabitEthernet0/2:
++ no cdp enable: 
+interface GigabitEthernet0/3:
++ no cdp enable: 

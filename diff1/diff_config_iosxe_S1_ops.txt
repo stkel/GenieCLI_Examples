@@ -1,0 +1,6 @@
+--- tests/normal/config_iosxe_S1_ops.txt
++++ tests/3/config_iosxe_S1_ops.txt
++Current configuration : 3760 bytes: 
+-Current configuration : 3815 bytes: 
+-router ospf 1: 
+- network 0.0.0.0 255.255.255.255 area 0: 

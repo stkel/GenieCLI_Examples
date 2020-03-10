@@ -1,5 +1,12 @@
-[2020-03-10 14:13:14,667] +++ R1 logfile tests/normal/connection_R1.txt +++
-[2020-03-10 14:13:14,667] +++ Unicon plugin iosxe +++
+[2020-03-10 15:29:37,117] +++ R1 logfile tests/3/connection_R1.txt +++
+[2020-03-10 15:29:37,117] +++ Unicon plugin iosxe +++
+The authenticity of host '192.168.122.10 (192.168.122.10)' can't be established.
+RSA key fingerprint is SHA256:bhNFiChDdpawZLy/dxp5OshoPD1BJMQp2Dc0tvejhE8.
+Are you sure you want to continue connecting (yes/no)? 
+[2020-03-10 15:29:37,265] +++ connection to spawn: ssh -l cisco 192.168.122.10 -p 22, id: 140520991370688 +++
+[2020-03-10 15:29:37,265] connection to R1
+yes
+Warning: Permanently added '192.168.122.10' (RSA) to the list of known hosts.
 
 **************************************************************************
 * IOSv is strictly limited to use for evaluation, demonstration and IOS  *
@@ -8,10 +15,7 @@
 * of the IOSv Software or Documentation to any third party for any       *
 * purposes is expressly prohibited except as otherwise authorized by     *
 * Cisco in writing.                                                      *
-**************************************************************************
-[2020-03-10 14:13:15,060] +++ connection to spawn: ssh -l cisco 192.168.122.196 -p 22, id: 140491867270544 +++
-[2020-03-10 14:13:15,061] connection to R1
-Password: 
+**************************************************************************Password: 
 
 **************************************************************************
 * IOSv is strictly limited to use for evaluation, demonstration and IOS  *
@@ -22,14 +26,14 @@ Password:
 * Cisco in writing.                                                      *
 **************************************************************************
 R1#
-[2020-03-10 14:13:15,164] +++ initializing handle +++
-[2020-03-10 14:13:15,166] +++ R1: executing command 'term length 0' +++
+[2020-03-10 15:29:38,032] +++ initializing handle +++
+[2020-03-10 15:29:38,033] +++ R1: executing command 'term length 0' +++
 term length 0
 R1#
-[2020-03-10 14:13:15,387] +++ R1: executing command 'term width 0' +++
+[2020-03-10 15:29:38,206] +++ R1: executing command 'term width 0' +++
 term width 0
 R1#
-[2020-03-10 14:13:15,626] +++ R1: executing command 'show version' +++
+[2020-03-10 15:29:38,430] +++ R1: executing command 'show version' +++
 show version
 Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
 Technical Support: http://www.cisco.com/techsupport
@@ -39,7 +43,7 @@ Compiled Tue 22-Mar-16 16:19 by prod_rel_team
 
 ROM: Bootstrap program is IOSv
 
-R1 uptime is 1 week, 4 days, 23 hours, 40 minutes
+R1 uptime is 17 minutes
 System returned to ROM by reload
 System image file is "flash0:/vios-adventerprisek9-m"
 Last reload reason: Unknown reason

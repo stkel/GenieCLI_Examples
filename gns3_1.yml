@@ -1,10 +1,10 @@
 testbed:
-  name: gns3_1.yml
+  name: gns3_1
 
 devices:
   
   R1:
-    alias: router
+    alias: R1
     os: iosxe
     type: IOSv
     connections:
@@ -13,14 +13,79 @@ devices:
         via: cli
       cli:
         protocol: ssh
-        ip: 192.168.122.196
+        ip: 192.168.122.10
         port: 22
-    tacacs:
-      username: cisco
-    passwords:
-      tacacs: cisco
-      line: cisco
-     #enable: cisco
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+    #enable: cisco
+
+    custom:
+      abstraction:
+        order: [os, type]
+
+  S1:
+    alias: S1
+    os: iosxe
+    type: IOSv
+    connections:
+      defaults:
+        class: unicon.Unicon
+        via: cli
+      cli:
+        protocol: ssh
+        ip: 192.168.122.11
+        port: 22
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+    #enable: cisco
+
+    custom:
+      abstraction:
+        order: [os, type]
+
+  S2:
+    alias: S2
+    os: iosxe
+    type: IOSv
+    connections:
+      defaults:
+        class: unicon.Unicon
+        via: cli
+      cli:
+        protocol: ssh
+        ip: 192.168.122.12
+        port: 22
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+    #enable: cisco
+
+    custom:
+      abstraction:
+        order: [os, type]
+
+  S3:
+    alias: S3
+    os: iosxe
+    type: IOSv
+    connections:
+      defaults:
+        class: unicon.Unicon
+        via: cli
+      cli:
+        protocol: ssh
+        ip: 192.168.122.13
+        port: 22
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+    #enable: cisco
 
     custom:
       abstraction:
