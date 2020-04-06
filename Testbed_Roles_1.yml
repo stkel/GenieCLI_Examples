@@ -1,0 +1,28 @@
+
+testbed:
+
+  credentials:
+    default:
+      username: "%ASK{}"
+      password: "%ASK{}"
+    enable: 
+      password: "%ASK{user specified prompt}"
+
+devices:
+  R1:
+    alias: R1
+    os: iosxe
+    type: IOSv
+    connections:
+      defaults:
+        class: unicon.Unicon
+        via: cli
+      cli:
+        protocol: ssh
+        ip: 192.168.122.10
+        port: 22
+
+    custom:
+      abstraction:
+        order: [os, type]
+
